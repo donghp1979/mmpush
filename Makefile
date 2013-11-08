@@ -3,7 +3,7 @@
 %.beam:src/%.erl
 	erlc -W $<
 
-MODS = test
+MODS = test mm_switch uuid
 
 ERL = erl -s test print hello
 
