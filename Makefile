@@ -3,9 +3,9 @@
 %.beam:src/%.erl
 	erlc -W $<
 
-MODS = test mm_switch uuid
+MODS = test test_client uuid mm_acceptor mm_switch  
 
-ERL = erl -s test print hello
+ERL = erl -s mm_switch setup_test
 
 all: compile
 
